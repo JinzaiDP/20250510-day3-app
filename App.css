@@ -7,23 +7,23 @@
   background-color: #282c34;
   min-height: 100vh;
   
-  /* ★★★ 変更点: Flexboxで横並びを実現 ★★★ */
+ 
   display: flex;
-  flex-direction: row; /* 子要素を横に並べる */
-  align-items: flex-start; /* コンテンツを上端から配置 */
-  justify-content: center; /* コンテンツ全体を中央寄せ */
+  flex-direction: row; 
+  align-items: flex-start;
+  justify-content: center; 
   
-  /* 元のスタイルを調整 */
+  
   font-size: calc(10px + 2vmin);
   color: white;
-  padding: 40px 20px; /* 上下のパディングを追加 */
+  padding: 40px 20px; 
 }
 
-/* ★★★ 新規追加: 各セクションのスタイル ★★★ */
+
 .counter {
-  flex: 1; /* 利用可能な幅を均等に使う */
-  max-width: 450px; /* 幅を制限して見やすくする */
-  margin-right: 20px; /* TODOセクションとの間に隙間を作る */
+  flex: 1; 
+  max-width: 450px; 
+  margin-right: 20px; 
   padding: 20px;
   border: 1px solid #61dafb;
   border-radius: 8px;
@@ -31,16 +31,16 @@
 }
 
 .todo {
-  flex: 1; /* 利用可能な幅を均等に使う */
-  max-width: 450px; /* 幅を制限して見やすくする */
-  margin-left: 20px; /* カウンターセクションとの間に隙間を作る */
+  flex: 1; 
+  max-width: 450px;
+  margin-left: 20px;
   padding: 20px;
   border: 1px solid #61dafb;
   border-radius: 8px;
   background-color: #383c44;
 }
 
-/* ★★★ 新規追加: TODOリストアイテムの調整 ★★★ */
+
 .todo ul li {
   display: flex;
   justify-content: space-between;
@@ -53,21 +53,21 @@
   margin-right: 10px;
 }
 
-/* 画面幅が狭い場合の調整（モバイル対応） */
+
 @media (max-width: 900px) {
   .App-header {
-    flex-direction: column; /* 縦並びに戻す */
+    flex-direction: column;
     align-items: center;
   }
   
   .counter, .todo {
     width: 90%;
-    max-width: none; /* 幅の制限を解除 */
-    margin: 20px 0; /* 縦方向の余白に変更 */
+    max-width: none; 
+    margin: 20px 0;
   }
 }
 
-/* --- 以下は既存のスタイルのまま --- */
+
 
 button {
   font-size: 1rem;
@@ -89,7 +89,7 @@ input[type="text"] {
   padding: 10px;
   margin: 10px;
   border-radius: 4px;
-  width: 70%; /* 入力欄の幅を調整 */
+  width: 70%;
 }
 
 ul {
